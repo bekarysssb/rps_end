@@ -1,0 +1,153 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background-color: #002147; /* Dark background */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header {
+  background: #F2EFEA;
+  padding: 20px;
+  text-align: center;
+}
+
+header > h1 {
+  color: #002147;
+  margin-bottom: 10px;
+}
+
+/* Wallet button */
+#connectBtn {
+  background: #E2584D;
+  color: white;
+  border: 10px solid;
+  border: #002147;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#connectBtn:hover {
+  background: #c7463d;
+}
+
+/* Scoreboard */
+.score-board {
+  margin: 20px auto;
+  border: 3px solid;
+  color: #f2efea;
+  text-align: center;
+  width: 320px;
+  color: white;
+  font-size: 46px;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.badge {
+  background: #E2584D;
+  color: #F2EFEA;
+  font-size: 14px;
+  padding: 2px 10px;
+  border-radius: 4px;
+}
+
+.history {
+  color: #f2efea
+  list-style-type: none;  
+  padding: 0;
+  margin: 10px 0;
+}
+
+.history li {    
+  font-size: 18px;
+  color: #f2efea;       
+  margin: 6px 0;        
+  font-family: Arial, sans-serif;
+}
+
+
+#user-label {
+  position: absolute;
+  top: 30px;
+  left: -45px;
+}
+
+#computer-label {
+  position: absolute;
+  top: 30px;
+  right: -65px;
+}
+
+/* Result */
+.result {
+  font-size: 28px;
+  color: #F2EFEA;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Choices */
+.choices {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.choice {
+  border: 4px solid #F2EFEA;
+  border-radius: 50%;
+  margin: 0 20px;
+  padding: 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background: #d3d3d3; /* lighter hover for better contrast */
+  transform: scale(1.1);
+}
+
+/* Action message */
+#action-msg {
+  text-align: center;
+  color: #F2EFEA;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Blockchain status */
+#status {
+  text-align: center;
+  color: #E2584D;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .score-board {
+    width: 160px;
+    font-size: 32px;
+  }
+
+  .choice {
+    margin: 0 10px;
+    padding: 8px;
+  }
+
+  #action-msg {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Ethers.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.15.0/ethers.umd.min.js" 
+          integrity="sha512-UXYETj+vXKSURF1UlgVRLzWRS9ZiQTv3lcL4rbeLyqTXCPNZC6PTLF/Ik3uxm2Zo+E109cUpJPZfLxJsCgKSng==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+  <header>
+    <h1>Rock Paper Scissors</h1>
+    <button id="connectBtn">CONNECT WALLET</button>
+    <p id="bet">Bet: —</p>
+    <p id="status"></p>
+  </header>
+
+  <!-- Scoreboard -->
+  <div class="score-board">
+    <div id="user-label" class="badge">Your point</div>
+    <div id="computer-label" class="badge">Computer point</div>
+    <span id="user-score">0</span>:<span id="computer-score">0</span>
+  </div>
+
+
+  <!-- Result -->
+  <div class="result">
+    <p>Make your move to start the game.</p>
+  </div>
+
+  <!-- Choices -->
+  <div class="choices">
+    <div class="choice" id="r">
+      <img src="images/rock.png" alt="Rock">
+    </div>
+    <div class="choice" id="p">
+      <img src="images/paper.png" alt="Paper">
+    </div>
+    <div class="choice" id="s">
+      <img src="images/scissors.png" alt="Scissors">
+    </div>
+  </div>
+
+  <!-- Action message -->
+  <p id="action-msg">Make your move please.</p>
+
+<h3>Game History</h3>
+<ul id="history"></ul>
+
+  <!-- Blockchain status -->
+  <p id="status"></p>
+
+  <!-- Game logic -->
+  <script src="app.js" charset="utf-8"></script>
+</body>
+</html>
